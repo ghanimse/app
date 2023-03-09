@@ -1,0 +1,52 @@
+header {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        width: 80%;
+        margin: 0 auto;
+
+        h2 {
+            color: white;
+            text-shadow: 0 0 8px $main-color;
+        }
+
+        nav {
+            ul {
+                list-style-type: none;
+                display: inline-block;
+                margin-right: 12px;
+
+                li {
+                    cursor: pointer;
+                    display: inline-block;
+                    margin-right: 15px;
+                    font-weight: 600;
+                }
+
+                .categories:hover {
+                        color: $main-color;
+                }
+
+                .signin {
+                    font: 600 1.1rem $main-font;
+                    border: none;
+                    border-radius: 30px;
+                    background-color: $main-color;
+
+                    a {
+                        display: block;
+                        padding: 17px 23px;
+                        text-decoration: none;
+                        color: white;
+                    }
+
+                    &:hover {
+                        background-color: $hover-color;
+                    }
+                }
+            }
+        }
+    }
+}

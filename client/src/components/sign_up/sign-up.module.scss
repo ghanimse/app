@@ -1,0 +1,121 @@
+.container {
+    background-image: url('../../assets/polygon.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+    .exit {
+            z-index: 100;
+            position: absolute;
+            color: $main-color;
+            margin: 10px;
+            font-size: 2rem;
+            transform: rotateY(180deg);
+    }
+    
+    .exit {
+        z-index: 100;
+        position: absolute;
+        color: $main-color;
+        margin: 10px;
+        font-size: 2rem;
+        transform: rotateY(180deg);
+    }        .form_container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.963);
+        width: 700px;
+        box-shadow: 1.8px 1.8px 1.95rem #0a0a0ab3;
+        border-radius: 12px;
+        padding:  60px 40px 40px 30px; 
+
+        h1 {
+            color: $main-color;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 47% 47%;
+            column-gap: 6%;
+            
+            
+            label {
+                display: block;
+                font-weight: 600;
+                margin-top: 20px;
+                margin-bottom: 5px;
+                color: #292929;
+            }
+            
+            .errorMessage {
+                margin-top: 3px;
+                color: $danger-color;
+            }
+        
+            .phoneBox {
+                display: block;
+                position:relative;
+                
+                input {
+                    padding-left: 21%;
+                }
+                
+                .phonePrefix {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 20%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    position: absolute;
+                    background-color: #767474b3;
+                    border-radius: 7px 0 0 7px;
+                    color: white;
+                }
+            }
+
+            input, select {
+                padding-left: 10px;
+                font-family: $main-font;
+                font-size: 1.1rem;
+                width: 100%;
+                height: 42px;
+                border: 2px solid #ccc;
+                border-radius: 7px;
+                outline: none;
+            }
+        }
+
+        .Pterms {
+            position: absolute;
+            margin-top: 25px;
+            
+            
+            .terms {
+                color: $main-color;
+                font-weight: 600;
+                text-decoration: underline;
+            }
+        }
+
+        input[type='submit'] {
+            color: white;
+            background-color: $main-color;
+            border: none;
+            padding: 20px 40px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-family: $main-color;
+            font-size: 1rem;
+            margin-top: 12px;
+            display: block;
+            margin-left: auto;
+        }
+    }
+}
