@@ -1,0 +1,107 @@
+.container {
+    background-color: white;
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    padding-top: 50px;
+    
+    .header {
+        text-align: center;
+        
+        h3 {
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: $main-color;
+        }
+
+        .para {
+            font-size: 2rem;
+            text-transform: capitalize;
+            font-weight: 700;
+            color: $title-color;
+        }
+    }
+
+    .main {
+        margin-top: 100px;
+        display: grid;        
+        grid-template-columns: 1fr 1fr;
+
+
+        .leftSide {
+            width: 100%;
+            place-self: center;
+            padding: 0 100px;
+            
+            p {
+                color: $para-color;
+                font-size: 1.2rem;
+                font-style: italic;
+                margin-top: 7px;
+            }
+            
+            p.email a {
+                color: $para-color;
+                text-decoration: none;
+
+            }
+            
+            .icon a {
+                color: $main-color;
+                border-radius: 7px;
+                display: inline-block;
+                font-size: 2rem;
+                margin: 20px 20px 0 0;
+            }
+        }
+
+        .rightSide {
+            width: 100%;
+            padding: 0 100px;
+            place-self: center;
+
+            .flex {
+                display: flex;
+                column-gap: 15px;
+            }
+
+            .item {
+                width: 100%;
+
+                label {
+                    display: block;
+                    color: $para-color;
+                }
+                
+                span {
+                    display: block;
+                    width: 100%;
+                    
+                }
+                input, textarea {
+                    border: 2px solid;
+                    border-color: transparent transparent $main-color transparent;
+                    outline: none;
+                    width: 100%;
+                    
+                    
+                    &:focus {
+                        border-bottom-color: $hover-color;
+                    }
+                }
+                
+                input {
+                    margin-bottom: 20px;
+                    height: 45px;
+                }
+            
+                textarea {
+                    resize: none;
+                }
+            }
+        }
+    }
+
+}

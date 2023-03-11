@@ -1,4 +1,11 @@
 header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    background-color: white;
+    border-bottom: 1px solid #f0f0f0;
+
     .container {
         display: flex;
         justify-content: space-between;
@@ -8,44 +15,56 @@ header {
         margin: 0 auto;
 
         h2 {
-            color: white;
-            text-shadow: 0 0 8px $main-color;
+            font-size: 2rem;
+            color: $title-color;
+            cursor: pointer;
         }
 
         nav {
             ul {
                 list-style-type: none;
                 display: inline-block;
-                margin-right: 12px;
 
                 li {
-                    cursor: pointer;
                     display: inline-block;
-                    margin-right: 15px;
-                    font-weight: 600;
-                }
 
-                .categories:hover {
-                        color: $main-color;
-                }
-
-                .signin {
-                    font: 600 1.1rem $main-font;
-                    border: none;
-                    border-radius: 30px;
-                    background-color: $main-color;
-
-                    a {
-                        display: block;
-                        padding: 17px 23px;
+                    .categories {
+                        cursor: pointer;
+                        margin: 0 15px;
+                        font-weight: 600;
+                        font-size: 1.1rem;
+                        color: black;
                         text-decoration: none;
-                        color: white;
+
+                        &:hover {
+                                color: $main-color;
+                        }
                     }
 
-                    &:hover {
-                        background-color: $hover-color;
+                    .active {
+                        color: $main-color;
                     }
                 }
+
+            }
+        }
+
+        .signin {
+            display: block;
+            font: 600 1.1rem $main-font;
+            border: none;
+            border-radius: 30px;
+            background-color: $main-color;
+
+            a {
+                display: inline-block;
+                padding: 17px 23px;
+                text-decoration: none;
+                color: white;
+            }
+
+            &:hover {
+                background-color: $hover-color;
             }
         }
     }

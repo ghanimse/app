@@ -7,15 +7,17 @@ export default function Header() {
     return (
         <header>
             <div className={style.container}>
-                <h2>brand</h2>
+                <h2>TAPIM</h2>
                 <nav>
                     <ul>
-                        <li className={style.categories}>About Us</li>
-                        <li className={style.categories}>Help</li>
-                        <li className={style.categories}>Contact Us</li>
-                        <li className={style.signin}><Link to='/signin'>Sign In</Link></li>
+                        <li><a className={`${style.categories} ${style.active}`} href="#home">Home</a></li>
+                        <li><a className={style.categories} href="#services">Services</a></li>
+                        <li><a className={style.categories} href="#about">About</a></li>
+                        <li><a className={style.categories} href="#help">Help</a></li>
+                        <li><a className={style.categories} href="#contact">Contact</a></li>
                     </ul>
                 </nav>
+                <span className={style.signin}><Link to='/signin'>Sign In</Link></span>
             </div>
         </header>
     )

@@ -1,0 +1,53 @@
+.background {
+    background-image: url('../../assets/wave.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 130vh;
+    position: fixed;
+    z-index: 1;
+}
+
+.home {
+    position: relative;    
+    width: 100%;
+    height: 130vh;   
+    z-index: 2; 
+
+
+    .container {
+        position: absolute;
+        padding-left: 100px;
+        width: 100%;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        h1 {
+            font-size: 5rem;
+            color: $title-color;
+            line-height: 1.1;
+            margin-bottom: 12px;
+        }
+        
+        p {
+            font-size: 1.5rem;
+            color: $para-color;
+            margin-bottom: 12px;
+        }
+
+        .signup {
+            text-decoration: none;
+            display: inline-block;
+            background-color: $main-color;
+            border-radius: 30px;
+            color: white;
+            font: 600 1.1rem $main-font;
+            padding: 17px 23px;
+            
+            &:hover {
+                background-color: $hover-color;
+            }
+        }
+    }
+}

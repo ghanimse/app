@@ -1,0 +1,66 @@
+.services {
+    padding-top: 60px;
+
+    .container {
+        background-color: white;
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        height: 90vh;
+        padding-top: 70px;
+
+        .header {
+            text-align: center;
+            h2 {
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                font-weight: 600;
+                color: $main-color;
+                margin-bottom: 12px;
+            }
+            
+            p {
+                margin: 0 auto;
+                width: 500px;
+                font-size: 2rem;
+                font-weight: 700;
+                color: $title-color;
+            }
+        }
+
+
+        .categories {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 100%;
+            list-style-type: none;
+            margin-top: 20px;
+            
+            li {
+                text-align: center;
+                padding: 50px 100px;
+
+                .icon {
+                    display: block;
+                    color: $main-color;
+                    font-size: 7rem;
+                    margin-bottom: 12px;
+                }
+
+                .name {
+                    display: block;
+                    color: $title-color;
+                    font-weight: 700;
+                    font-size: 1.1rem;
+                    margin-bottom: 12px;
+                }
+                
+                p {
+                    color: $para-color;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+    }
+}
